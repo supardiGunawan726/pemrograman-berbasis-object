@@ -8,7 +8,6 @@ public class CSVCopy {
   public static void main(String[] args) {
     String csvfile = "/Users/pardi/Developer/University/pemrograman-berbasis-object/11/FileHandling/src/students.csv";
     String csvCopyfile = "/Users/pardi/Developer/University/pemrograman-berbasis-object/11/FileHandling/src/copy_students.csv";
-    System.out.println("NIM, NAMA, UMUR, PRODI");
     try (
       BufferedReader br = new BufferedReader (new FileReader(csvfile));
       BufferedWriter bw = new BufferedWriter(new FileWriter(csvCopyfile))
